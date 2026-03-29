@@ -1,0 +1,6 @@
+Bạn (Auto): Bài 4: kiểm tra chia hết cho 2 hoặc 3
+Bài 5: giải phương trình bậc 2
+📚 Tìm thấy 2 bài
+✔ Đã tạo file: output\Bai4.py
+✔ Đã tạo file: output\Bai5.py
+🚀 Đã push GitHub thành công

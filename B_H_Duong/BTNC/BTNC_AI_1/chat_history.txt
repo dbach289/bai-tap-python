@@ -1,0 +1,177 @@
+👤 Bạn: Kiểm tra một số có phải số nguyên tố không
+
+🤖 AI (llama-3.3-70b-versatile):
+
+💻 CODE:
+Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+
+📘 GIẢI THÍCH:
+Không có giải thích.
+
+👤 Bạn: Đếm số chữ số trong một số
+
+🤖 AI (llama-3.3-70b-versatile):
+
+💻 CODE:
+```python
+def dem_so_chu_so(n):
+    """
+    Đếm số chữ số trong một số.
+
+    Args:
+        n (int): Số cần đếm chữ số.
+
+    Returns:
+        int: Số chữ số trong số n.
+    """
+    return len(str(abs(n)))
+```
+
+📘 GIẢI THÍCH:
+Để đếm số chữ số trong một số, chúng ta có thể chuyển số đó thành chuỗi và sau đó lấy độ dài của chuỗi đó. Hàm `abs()` được sử dụng để đảm bảo rằng số được đếm là số tuyệt đối, nghĩa là bỏ qua dấu trừ nếu số là âm. Hàm `len()` trả về số lượng ký tự trong chuỗi, tương đương với số chữ số trong số ban đầu.
+
+Bạn: Tìm số lớn nhất trong mảng
+
+AI (llama-3.3-70b-versatile):
+
+CODE:
+```python
+def tim_so_lon_nhat(mang):
+    so_lon_nhat = mang[0]
+    for so in mang:
+        if so > so_lon_nhat:
+            so_lon_nhat = so
+    return so_lon_nhat
+
+# Ví dụ sử dụng
+mang = [12, 45, 7, 23, 56, 89, 34]
+print("Số lớn nhất trong mảng là:", tim_so_lon_nhat(mang))
+```
+
+GIẢI THÍCH:
+Để tìm số lớn nhất trong mảng, chúng ta có thể sử dụng hàm `tim_so_lon_nhat` như trên. Hàm này nhận vào một mảng và trả về số lớn nhất trong mảng đó.
+
+- Đầu tiên, chúng ta giả định số lớn nhất là phần tử đầu tiên của mảng (`so_lon_nhat = mang[0]`).
+- Sau đó, chúng ta lặp qua từng phần tử trong mảng (`for so in mang:`).
+- Nếu phần tử hiện tại (`so`) lớn hơn số lớn nhất hiện tại (`so_lon_nhat`), chúng ta cập nhật số lớn nhất (`so_lon_nhat = so`).
+- Cuối cùng, sau khi lặp qua toàn bộ mảng, hàm trả về số lớn nhất (`return so_lon_nhat`).
+
+Tuy nhiên, Python cũng cung cấp hàm `max()` để tìm số lớn nhất trong mảng một cách trực tiếp hơn:
+
+```python
+mang = [12, 45, 7, 23, 56, 89, 34]
+print("Số lớn nhất trong mảng là:", max(mang))
+```
+
+Bạn: Sắp xếp danh sách số theo thứ tự tăng dần
+
+AI (llama-3.3-70b-versatile):
+
+CODE:
+```python
+def sap_xep_danh_sach(danh_sach):
+    return sorted(danh_sach)
+
+# Ví dụ sử dụng
+danh_sach_so = [64, 34, 25, 12, 22, 11, 90]
+danh_sach_so_da_sap_xep = sap_xep_danh_sach(danh_sach_so)
+print("Danh sách số sau khi sắp xếp:", danh_sach_so_da_sap_xep)
+```
+
+GIẢI THÍCH:
+Trong đoạn code trên, chúng ta sử dụng hàm `sorted()` của Python để sắp xếp danh sách số theo thứ tự tăng dần. Hàm `sorted()` trả về một danh sách mới đã được sắp xếp, mà không thay đổi danh sách gốc.
+
+- Hàm `sap_xep_danh_sach(danh_sach)` là một hàm tự định nghĩa để sắp xếp danh sách.
+- Biến `danh_sach_so` chứa một danh sách số chưa được sắp xếp.
+- Biến `danh_sach_so_da_sap_xep` chứa kết quả sau khi sắp xếp danh sách số bằng hàm `sap_xep_danh_sach(danh_sach_so)`.
+- Cuối cùng, chúng ta in ra kết quả để xem danh sách số đã được sắp xếp theo thứ tự tăng dần.
+
+Bạn: chuong trinh phuong trinh bac 1
+
+AI (llama-3.3-70b-versatile):
+
+CODE:
+```python
+def giaiptbac1(a, b):
+    if a == 0:
+        if b == 0:
+            return "Vô số nghiệm"
+        else:
+            return "Vô nghiệm"
+    else:
+        return -b / a
+
+a = float(input("Nhập hệ số a: "))
+b = float(input("Nhập hệ số b: "))
+
+ketqua = giaiptbac1(a, b)
+
+print("Nghiệm của phương trình là: ", ketqua)
+```
+
+GIẢI THÍCH:
+Chương trình trên giải phương trình bậc 1 ax + b = 0. 
+
+- Đầu tiên, chương trình sẽ yêu cầu người dùng nhập hệ số a và b của phương trình.
+- Hàm `giaiptbac1(a, b)` sẽ kiểm tra các trường hợp sau:
+  - Nếu `a` bằng 0 và `b` bằng 0, phương trình có vô số nghiệm.
+  - Nếu `a` bằng 0 và `b` khác 0, phương trình vô nghiệm.
+  - Nếu `a` khác 0, phương trình có nghiệm duy nhất là `-b / a`.
+- Cuối cùng, chương trình sẽ in ra nghiệm của phương trình.
+
+Bạn: giai phuong trinh bac 2
+
+AI (llama-3.1-8b-instant):
+
+CODE:
+Để giải phương trình bậc 2, chúng ta có thể sử dụng công thức giải phương trình bậc 2 sau:
+
+ax^2 + bx + c = 0
+
+Trong đó, a, b, c là các số thực.
+
+Công thức giải phương trình bậc 2 là:
+
+x = (-b ± √(b^2 - 4ac)) / 2a
+
+Dưới đây là một ví dụ đơn giản về việc giải phương trình bậc 2 trong Python:
+
+```python
+import math
+
+def giai_phuong_trinh_bac_2(a, b, c):
+    # Tính toán giá trị dưới dấu căn
+    delta = b**2 - 4*a*c
+    
+    # Kiểm tra xem phương trình có nghiệm thực hay không
+    if delta < 0:
+        return "Phương trình vô lí"
+    elif delta == 0:
+        # Nếu delta bằng 0, phương trình có nghiệm kép
+        return f"x = {-b / (2*a)}"
+    else:
+        # Nếu delta không bằng 0, phương trình có hai nghiệm thực khác nhau
+        root1 = (-b + math.sqrt(delta)) / (2*a)
+        return f"x1 = {root1}, x2 = {(-b - math.sqrt(delta)) / (2*a)}"
+
+# Lấy giá trị các hệ số a, b, c từ người dùng
+a = float(input("Nhập hệ số a: "))
+b = float(input("Nhập hệ số b: "))
+c = float(input("Nhập hệ số c: "))
+
+# Gọi hàm giải phương trình bậc 2
+ket_qua = giai_phuong_trinh_bac_2(a, b, c)
+print(ket_qua)
+```
+
+**Giải thích**
+
+*   Mã code trên cho phép người dùng nhập vào giá trị các hệ số a, b, c của phương trình bậc 2.
+*   Hàm giải phương trình bậc 2 `giai_phuong_trinh_bac_2(a, b, c)` tính toán và trả về giá trị của nghiệm của phương trình bậc 2.
+*   Trong trường hợp phương trình có nghiệm kép, hàm sẽ trả về giá trị của nghiệm kép này.
+*   Nếu phương trình vô lí (tức là không có nghiệm thực), hàm sẽ trả về thông điệp "Phương trình vô lí".
+*   Trong cuối code, chúng ta gọi hàm giải phương trình bậc 2 và in kết quả lên màn hình.
+
+GIẢI THÍCH:
+Không có giải thích.
+
