@@ -1,9 +1,3 @@
-Bạn (Auto): bai 1 tinh tong 1 den n
-📚 Tìm thấy 1 bài
-⏳ Đang tạo code Bài 1...
-📄 D:/python/B_H_Duong/vi du\Bai1.py
-✔ Đã tạo file: D:/python/B_H_Duong/vi du\Bai1.py
-
 # ===== Bài 1 =====
 # Hàm tính tổng từ 1 đến n
 def tinh_tong(n):
@@ -35,9 +29,3 @@ def main():
 # Chạy hàm main
 if __name__ == "__main__":
     main()
-
-🚀 Đang push GitHub...
-✔ Đã commit
-⚠️ Pull có cảnh báo (có thể conflict nhẹ)
-⚠️ Push bị reject → thử force push...
-🔥 Force push thành công
