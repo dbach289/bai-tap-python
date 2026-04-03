@@ -1,0 +1,29 @@
+=== KET QUA DANH GIA TRUNG LAP ===
+Thu muc 1: D:\python\B_H_Duong\BTNC\BTNC_AI_1
+Thu muc 2: D:\python\B_H_Duong\BTNC\BTNC_AI_2
+
+1) Trung lap CODE (%): 36.42% | Muc do: THAP
+   - So file Python: 1 vs 4
+
+2) Trung lap CACH GIAI QUYET / CACH CODE (%): 99.13% | Muc do: RAT CAO
+   - Danh gia theo AST: cau truc node, import, ham, class, so luong tham so...
+
+3) Trung lap BAO CAO / TIEU LUAN (%): 13.04% | Muc do: RAT THAP
+   - So file van ban: 1 vs 1
+   - Muc canh bao sao: *
+
+4) TOP CAP FILE PYTHON GIONG NHAU NHAT:
+   1. 56.73%
+      - File 1: D:/python/B_H_Duong/BTNC/BTNC_AI_1\ai_code_app.py
+      - File 2: D:/python/B_H_Duong/BTNC/BTNC_AI_2\main.py
+   2. 16.67%
+      - File 1: D:/python/B_H_Duong/BTNC/BTNC_AI_1\ai_code_app.py
+      - File 2: D:/python/B_H_Duong/BTNC/BTNC_AI_2\ai_handler.py
+   3. 14.09%
+      - File 1: D:/python/B_H_Duong/BTNC/BTNC_AI_1\ai_code_app.py
+      - File 2: D:/python/B_H_Duong/BTNC/BTNC_AI_2\bai_handler.py
+   4. 6.43%
+      - File 1: D:/python/B_H_Duong/BTNC/BTNC_AI_1\ai_code_app.py
+      - File 2: D:/python/B_H_Duong/BTNC/BTNC_AI_2\github_handler.py
+
+Luu y: ket qua mang tinh tham khao tu dong, can ket hop danh gia thu cong de ket luan hoc thuat.
