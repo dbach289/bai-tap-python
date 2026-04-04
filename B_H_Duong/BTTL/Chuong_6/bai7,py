@@ -1,0 +1,11 @@
+from collections import Counter
+
+_list = ['abc', 'xyz', 'abc', '12', 'ii', '12', '5a']
+c = Counter(_list)
+
+only_once = [x for x in _list if c[x] == 1]
+unique = list(dict.fromkeys(_list))
+
+
+print("Chỉ phần tử không trùng:", only_once)
+print("Giữ 1 phần tử:", unique)
